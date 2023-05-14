@@ -1,20 +1,25 @@
 import { Fragment } from "react";
-import  MyPhoto  from '../../assets/niall.jpg';
+import  MyPhoto  from '../../assets/me2.png';
 import 
 { HomeContainer,
 HeyContainer,
-ImageContainer } from "./home.styles";
+ImageContainer,
+Image ,
+Outer} from "./home.styles";
 const Home = () =>{
     return(
         <Fragment>
             <HomeContainer>
                 <HeyContainer>
-                <h1>Hey there!</h1>
+                <h1>Hey there,</h1>
                  <h1>I am Nafisha Salsabil</h1>
+                 <h2>I am into Software Development</h2>
                 </HeyContainer>
-                <ImageContainer>
-                   <img src = {MyPhoto} alt="me"></img>
+                <Outer>                <ImageContainer>
+                   <Image src = {MyPhoto} alt="me"></Image>
                  </ImageContainer>
+                 </Outer>
+
             </HomeContainer> 
 
         </Fragment>
